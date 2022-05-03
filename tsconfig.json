@@ -22,9 +22,10 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "types": ["node", "jest", "@testing-library/jest-dom"]
 }
