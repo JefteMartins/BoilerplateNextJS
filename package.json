@@ -8,10 +8,11 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
+    "test:watch": "jest --watch",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "src/**/*": ["eslint --cache --fix", "npm test --bail"]
   },
   "dependencies": {
     "next": "12.1.5",
